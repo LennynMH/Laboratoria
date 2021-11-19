@@ -1,0 +1,645 @@
+@import 'variables';
+@import 'mixins';
+
+*{
+  margin: 0px;
+  padding:0px;
+  box-sizing: border-box;
+}
+
+body{
+  background-color: map-get($color,greenLight);
+}
+
+/* error */
+.containerFigure {
+  display: contents;
+}
+
+.containerError {
+  height: 100vh;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.divContainer {
+  height: 140px;
+  max-width: 100%;
+  margin: 15px auto;
+  @include breakpoint(765px) {
+    height: 100px;
+    margin: 30px auto;
+  }
+}
+
+.titleError {
+  font-size: 25px;
+  color: map-get($color, greyLight );
+  @include breakpoint(765px) {
+    font-size: 30px;
+  }
+}
+
+.descriptionError {
+  font-size: 15px;
+  @include breakpoint(765px) {
+    font-size: 20px;
+  }
+}
+
+.btnHome {
+  background: map-get($color, greenMedium );
+  border: none;
+  border-radius: 10px;
+}
+
+.btnHome a {
+  color: map-get($color, greenLight );
+  font-size: 18px;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+
+/*Carrusel*/
+.imageCorousel{
+  display: flex !important;
+  flex-direction: column;
+  align-items: center;
+}
+.containerImageText {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-top: 10px;
+  margin-bottom: 0px;
+  background-color: map-get($color,colorWhite);
+  border-radius: 20px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  align-items: center;
+  padding-left: 30px;
+  padding: 30px;
+}
+.containerImageText img {
+  width: 20%;
+}
+.textCarousel {
+  margin-left: 10px;
+}
+.textCarousel h5{
+  color: map-get($color,greyLight);
+  font-size: map-get($font-size,s);
+  text-align: center;
+  margin: 0;
+  @include breakpoint(tablet) {
+    font-size: map-get($font-size,m);
+  }
+  @include breakpoint(laptop) {
+    font-size: map-get($font-size,ml);
+  }
+  @include breakpoint(desktop) {
+    font-size: map-get($font-size,x);
+  }
+}
+.textCarousel p {
+  font-size: map-get($font-size,m);
+  color: map-get($color,greenDark);
+  text-align: center;
+  margin: 0;
+  @include breakpoint(tablet) {
+    font-size: map-get($font-size,m);
+  }
+  @include breakpoint(laptop) {
+    font-size: map-get($font-size,m);
+  }
+  @include breakpoint(desktop) {
+    font-size: map-get($font-size,ml);
+  }
+}
+.plano {
+  width: 418px;
+  height: 507px;
+  left: 5px;
+  top: 165px;
+}
+.carouselMainContainerl{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  margin: 0px 30px;
+  margin-bottom: 40px;
+  bottom: 0;
+  @include breakpoint(tablet) {
+    margin-left: 100px;
+    margin-right: 100px;
+  }
+  @include breakpoint(laptop) {
+    margin-left: 200px;
+    margin-right: 200px;
+  }
+  @include breakpoint(desktop) {
+    margin-left: 300px;
+    margin-right: 300px;
+  }
+  
+}
+.contentCarrusel {
+  width: 100% !important;
+}
+.contentCarrusel button {
+  margin-top: 16%;
+  background-color: #10C94A;
+  border-radius: 30px;
+  height: 30px;
+  width: 30px;
+  @include breakpoint(tablet) {
+    margin-top: 11%;
+    height: 45px;
+    width: 45px;
+  }
+  @include breakpoint(laptop) {
+    margin-top: 11%;
+  }
+  @include breakpoint(desktop) {
+    margin-top: 11%;
+    height: 50px;
+    width: 50px;
+  }
+}
+.contentCarrusel span {
+  width: 15px;
+  @include breakpoint(tablet) {
+    width: 25px;
+  }
+  @include breakpoint(desktop) {
+    width: 25px;
+  }
+}
+.buttonCar {
+  background-color: black;
+}
+.carousel {
+  bottom: 0;
+  width: 100%;
+}
+/*vista products*/
+.headerProducts {
+  background-color: map-get($color,colorWhite);
+  padding: 10px 30px 0px;
+  margin-bottom: 20px;
+  @include breakpoint(tablet) {
+    padding: 10px 100px 0px;
+  }
+  @include breakpoint(laptop) {
+    padding: 10px 200px 0px;
+  }
+  @include breakpoint(desktop) {
+    padding: 10px 300px 0px;
+  }
+}
+.headerProducts img {
+  width: 15%;
+  margin: 0px 0px 30px;
+  @include breakpoint(desktop) {
+    width: 80px;
+  }
+}
+.headerProducts h1 {
+  color: map-get($color,greenMedium);
+  font-size: map-get($font-size,x);
+  @include breakpoint(desktop) {
+    font-size: map-get($font-size,xxl);
+  }
+}
+.headerProducts hr {
+  color: map-get($color,greenMedium);
+  width: 30px;
+  height: 2px;
+  margin: 0px;
+}
+.headerProducts i {
+  font-size: 25px;
+  color: map-get($color,greenMedium);
+  margin-right: 5px;
+}
+.textLocation p{
+  color: map-get($color,greyLight);
+  margin-bottom: 0;
+}
+.textLocation p:first-child{
+  font-weight: bold;
+}
+/* searchProducts */
+.searchProducts {
+  margin: 0px 30px 30px;
+  @include breakpoint(tablet) {
+    margin: 0px 100px 30px;
+  }
+  @include breakpoint(laptop) {
+    margin: 0px 200px 30px;
+  }
+  @include breakpoint(desktop) {
+    margin: 0px 300px 30px;
+  }
+}
+.mySearchProducts {
+  text-decoration: none;
+  border-radius: 10px;
+  border: 0px;
+  background-color: map-get($color,colorWhite);
+  color: map-get($color,greenMedium);
+}
+.mySearchProducts::placeholder {
+  color: map-get($color,greenMedium);
+  @include breakpoint(desktop) {
+    font-size: map-get($font-size,ml);
+  }
+}
+.titleProducts {
+  color: map-get($color,greyLight);
+  margin-left: 30px;
+  @include breakpoint(tablet) {
+    margin-left: 100px;
+  }
+  @include breakpoint(laptop) {
+    margin-left: 200px;
+  }
+  @include breakpoint(desktop) {
+    margin-left: 300px;
+  }
+}
+.titleProducts h2 {
+  font-size: map-get($font-size,ml);
+  @include breakpoint(tablet) {
+    font-size: map-get($font-size,ml);
+  }
+  @include breakpoint(laptop) {
+    font-size: map-get($font-size,ml);
+  }
+  @include breakpoint(desktop) {
+    font-size: map-get($font-size,x);
+  }
+}
+/*containerProduts*/
+.myCard {
+  width: 150px;
+  height: 300px;
+  background-color: map-get($color,colorWhite);
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 15px;
+  padding-bottom: 10px;
+  margin-top: 15px;
+  justify-content: space-around;
+}
+.myCard img {
+  width: 55%;
+  margin: 10px 10px 5px;
+}
+.containerProduts {
+  margin: 0px 30px;
+  margin-bottom: 40px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-column-gap: 30px;
+  grid-row-gap: 15px;
+  justify-items: center;
+  align-items: center;
+  /*flex-wrap: wrap;*/
+  @include breakpoint(phablet) {
+    margin: 0px 100px;
+    display: grid;
+    /* justify-items: center; */
+    justify-content: center;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+  @include breakpoint(laptop) {
+    margin: 0px 200px;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+  @include breakpoint(desktop) {
+    margin: 0px 300px;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+}
+.myCard h5 {
+  font-size: 0.8em;
+  color: map-get($color,greyLight);
+  text-align: center;
+  margin: 0;
+  text-transform: uppercase !important;
+  padding: 0px 15px;
+}
+.myCard p {
+  font-size: map-get($font-size,m);
+  color: map-get($color,greenDark);
+  text-align: center;
+  margin: 0;
+}
+.cardButtons {
+  display: flex;
+  flex-direction: column;
+}
+.cardButtons button {
+  font-size: map-get($font-size,s);
+  width: 130px;
+  padding: 2px;
+  border-radius: 10px;
+  border: 1px solid #10C94A;
+  margin: 5px;
+  background-color: map-get($color,colorWhite);
+  color: map-get($color,greenMedium);
+}
+.cardButtons button:hover {
+  background-color: map-get($color,greenMedium);
+  color: map-get($color,colorWhite);
+
+}
+/*vista location*/
+.contenedorTotal {
+  margin: 10px 30px 40px;
+} 
+.containerBack {
+  display: flex;
+  align-items: center;
+  margin-left: 30px;
+  margin-right: 30px;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  @include breakpoint(tablet) {
+    margin-top: 40px;
+    margin-left: 100px;
+    margin-right: 100px;
+  }
+  @include breakpoint(laptop) {
+    margin-top: 45px;
+    margin-left: 200px;
+    margin-right: 200px;
+  }
+  @include breakpoint(desktop) {
+    margin-top: 50px;
+    margin-left: 300px;
+    margin-right: 300px;
+  }
+  
+}
+.containerBack i {
+  text-decoration: none;
+  border: 0;
+  color: map-get($color,greenMedium);
+  font-size: 25px;
+}
+.containerBack p {
+  margin-top: 10px;
+  margin-left: 10px;
+  cursor: pointer;
+  color: map-get($color,greenMedium);
+  font-size: map-get($font-size,m);
+  @include breakpoint(laptop) {
+    font-size: map-get($font-size,ml);
+  }
+  @include breakpoint(desktop) {
+    font-size: map-get($font-size,ml);
+  }
+}
+.containerImage {
+  margin-left: 0px;
+  margin-right: 0px;
+  display: flex;
+  justify-content: center;
+  background-color: map-get($color,colorWhite);
+  @include breakpoint(tablet) {
+    margin-left: 100px;
+    margin-right: 100px;
+  }
+  @include breakpoint(laptop) {
+    margin-left: 200px;
+    margin-right: 200px;
+  }
+  @include breakpoint(desktop) {
+    margin-left: 300px;
+    margin-right: 300px;
+  }
+}
+.containerImage img{
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  @include breakpoint(phablet) {
+    width: 70%;
+  }
+  @include breakpoint(tablet) {
+    width: 55%;
+  }
+  @include breakpoint(laptop) {
+    width: 55%;
+  }
+  @include breakpoint(desktop) {
+    width: 50%;
+  }
+}
+.containerTextProduct {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  background-color: map-get($color,colorWhite);
+  @include breakpoint(tablet) {
+    margin-left: 100px;
+    margin-right: 100px;
+  }
+  @include breakpoint(laptop) {
+    margin-left: 200px;
+    margin-right: 200px;
+  }
+  @include breakpoint(desktop) {
+    margin-left: 300px;
+    margin-right: 300px;
+  }
+}
+.containerTextProduct p {
+  border-radius: 30px;
+  text-align: center;
+  width: 250px;
+  padding: 5px;
+  background-color: map-get($color,greenLight);
+  color: map-get($color,greenMedium);
+  @include breakpoint(laptop) {
+    font-size: map-get($font-size,ml);
+    width: 450px;
+  }
+  @include breakpoint(desktop) {
+    font-size: map-get($font-size,x);
+    width: 450px;
+  }
+}
+.titleCarousel {
+  margin-top: 10px;
+  margin-left: 30px;
+  margin-right: 30px;
+  @include breakpoint(tablet) {
+    margin-top: 30px;
+    margin-left: 100px;
+    margin-right: 100px;
+  }
+  @include breakpoint(laptop) {
+    margin-top: 40px;
+    margin-left: 200px;
+    margin-right: 200px;
+  }
+  @include breakpoint(desktop) {
+    margin-top: 50px;
+    margin-left: 300px;
+    margin-right: 300px;
+  }
+}
+.titleCarousel h1 {
+  color: map-get($color,greenMedium);
+  font-size: map-get($font-size,m);
+  @include breakpoint(laptop) {
+    font-size: map-get($font-size,x);
+  }
+  @include breakpoint(desktop) {
+    font-size: map-get($font-size,xl);
+  }
+}
+.titleCarousel hr {
+  color: map-get($color,greenMedium);
+  width: 30px;
+  height: 2px;
+  margin: 0px;
+}
+/**vista stock*/
+.viewStockproduct {
+  min-height: 530px;
+}
+.containerImageStock {
+  padding-top: 30px;
+  padding-bottom: 30px;
+  background-color: map-get($color,colorWhite);
+  display: flex;
+  justify-content: center;
+  @include breakpoint(tablet) {
+    margin-left: 100px;
+    margin-right: 100px;
+  }
+  @include breakpoint(laptop) {
+    margin-left: 200px;
+    margin-right: 200px;
+  }
+  @include breakpoint(desktop) {
+    margin-left: 300px;
+    margin-right: 300px;
+  }
+}
+.containerImageStock img{
+  margin: 0;
+  padding: 0;
+  width: 47%;
+  @include breakpoint(phablet) {
+    width: 40%;
+  }
+  @include breakpoint(tablet) {
+    width: 40%;
+  }
+  @include breakpoint(laptop) {
+    width: 30%;
+  }
+  @include breakpoint(desktop) {
+    width: 30%;
+  }
+}
+.containerTextStock {
+  background-color: map-get($color,colorWhite);
+  padding-top: 10px;
+  margin: 0;
+  @include breakpoint(tablet) {
+    margin-left: 100px;
+    margin-right: 100px;
+  }
+  @include breakpoint(laptop) {
+    margin-left: 200px;
+    margin-right: 200px;
+  }
+  @include breakpoint(desktop) {
+    margin-left: 300px;
+    margin-right: 300px;
+  }
+}
+.allTextStock {
+  margin-left: 30px;
+  margin-right: 30px;
+  padding-bottom: 5px;
+}
+.allTextStock h3{
+  color: map-get($color,greyLight);
+  font-size: map-get($font-size,ml);
+}
+.allTextStock p:nth-child(2) {
+  color: map-get($color,greenDark);
+  font-size: map-get($font-size,ml);
+}
+.allTextStock p:nth-child(3) {
+  font-size: map-get($font-size,m);
+  color: #9B9B9B;
+  line-height: 20px;
+}
+.allTextStock span {
+  cursor: pointer;
+  color: map-get($color,greenMedium);
+}
+.textAvalaibleStock {
+  background-color: map-get($color,colorWhite);
+  margin-top: 0;
+  padding-top: 5px;
+  padding-bottom: 15px;
+  @include breakpoint(tablet) {
+    margin-left: 100px;
+    margin-right: 100px;
+  }
+  @include breakpoint(laptop) {
+    margin-left: 200px;
+    margin-right: 200px;
+  }
+  @include breakpoint(desktop) {
+    margin-left: 300px;
+    margin-right: 300px;
+  }
+}
+.textAvalaibleStock p {
+  margin-left: 30px;
+  margin-right: 30px;
+  background-color: map-get($color,greenLight);
+  border-radius: 20px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  text-align: center;
+  color: map-get($color,greenMedium);
+  font-weight: 500;
+}
+
+/* body{
+  @include roboto-regular(map-get($color,black),map-get($font-size,m));
+  background-image: url('../assets/img/background-stars.jpg');
+}
+.backgroundHome__image{
+  width: 100%;
+}
+a {
+  color: map-get($color,white);
+  text-decoration: none;
+  margin: 10px;
+  font-size: map-get($font-size,ml);
+  @include breakpoint(700px) {
+    margin: 10px 30px;
+    font-size: map-get($font-size,xxl);
+  }
+}
+*/

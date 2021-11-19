@@ -1,0 +1,63 @@
+{
+  "short_name": "chatbot",
+  "name": "chatbot",
+  "description": "Bienvenid@s al chatbot de Tottus",
+  "icons": [
+    {
+      "src": "favicon.ico",
+      "sizes": "1024x1024",
+      "type": "image/x-icon"
+    },
+    {
+      "src": "logo192.png",
+      "type": "image/png",
+      "sizes": "512x512"
+    },
+    {
+      "src": "logo512.png",
+      "type": "image/png",
+      "sizes": "384x384"
+    },
+    {
+      "src": "logo512.png",
+      "type": "image/png",
+      "sizes": "256x256"
+    },
+    {
+      "src": "logo512.png",
+      "type": "image/png",
+      "sizes": "192x192"
+    },
+    {
+      "src": "logo512.png",
+      "type": "image/png",
+      "sizes": "128x128"
+    },
+    {
+      "src": "logo512.png",
+      "type": "image/png",
+      "sizes": "96x96"
+    },
+    {
+      "src": "logo512.png",
+      "type": "image/png",
+      "sizes": "64x64"
+    },
+    {
+      "src": "logo512.png",
+      "type": "image/png",
+      "sizes": "32x32"
+    },
+    {
+      "src": "logo512.png",
+      "type": "image/png",
+      "sizes": "16x16"
+    }
+  ],
+  "start_url": ".",
+  "display": "standalone",
+  "theme_color": "#0DA73E",
+  "background_color": "#ffffff",
+  "orientation": "portrait",
+  "lang": "es"
+}
